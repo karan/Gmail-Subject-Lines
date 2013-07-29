@@ -1,7 +1,7 @@
 import gmaillib
 
 f=open('subjects.txt', 'w')
-account=gmaillib.account('', '')
+account=gmaillib.account('username', 'password')
 emails = account.inbox(start=0, amount=5000)
 
 for email in emails:
